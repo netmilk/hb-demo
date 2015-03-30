@@ -1,12 +1,11 @@
 #!/bin/sh
 npm install -g dredd
 
-
 export APIARY_API_URL=http://api.apiary.io
 export APIARY_API_KEY=add0b5027298ac11e76d09ccb2032d49
 export APIARY_API_NAME=hbdemo
 
-../node_modules/coffee-script/bin/coffee app.coffee &
+./node_modules/coffee-script/bin/coffee app.coffee &
 sleep 3
 PID=$!
 #../dredd/bin/dredd apiary.apib http://localhost:3000/ --reporter apiary

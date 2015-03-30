@@ -1,0 +1,23 @@
+{
+  "name": "hb-demo",
+  "version": "1.0.0",
+  "description": "Demo for Dredd",
+  "main": "index.js",
+  "scripts": {
+    "test": "./script/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/netmilk/hb-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/netmilk/hb-demo/issues"
+  },
+  "homepage": "https://github.com/netmilk/hb-demo",
+  "dependencies": {
+    "coffee-script": "^1.9.1",
+    "express": "^4.12.3"
+  }
+}
