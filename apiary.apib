@@ -1,18 +1,40 @@
-FORMAT: 1A
+# Inheritance and Reference
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-# Machines API
+## Message Resource [/resource]
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+### Create a Message [POST]
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-# Group Machines
++ Request
+    + Attributes (Message)
 
-# Machines collection [/machines]
++ Response 200
+    + Attributes
+       + id (string)
+       + message (Message) - Message attribute description
 
-## Get Machines [GET]
+## Message Resource with a model [/another_uri]
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
++ Attributes (Message)
 
-- Response 200 (application/json; charset=utf-8)
+## Get a Message [GET]
++ Response 200
 
-        [
-          {
-            "typo": "bulldozer",
-            "name": "willy"
-          }
-        ]
+# Data Structures
+
+## Complication (object) [![Build Status](https://travis-ci.org/apiaryio/dredd-transactions.svg?branch=master)](https://travis-ci.org/apiaryio/dredd-transactions)
++ myObject
+  + someNestedKey: dsadas - Some description
+  + someNestedKey2: dsadas - Some other description
+
++ myArray (array)
+  - A
+  - B
+  - (object)
+      - key1: value1
+      - key2: value2 - Nested Object in Array description
+
+## Message (object)
+- include Complication
+- text: Hello!
